@@ -1,4 +1,5 @@
 import React from 'react';
+import Character from './components/Character';
 import './App.css';
 
 const App = () => {
@@ -11,7 +12,10 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className='header-container'>
       <h1 className="Header">Characters</h1>
+      </div>
+      <Character />
     </div>
   );
 }
