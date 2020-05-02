@@ -1,18 +1,22 @@
 // Write your Character component here
 import React from 'react';
+import {CharacterContainer, CharacterCard, Images, Text, Name} from './Styles';
+
 
 const Character = props => {
 
     return (
-        <div className='App'>
-            <h1>Character: {props.name}</h1>
-            <img src={props.pic} alt={props.name}/>
-            <p>Origin: {props.origin.name}</p>
-            <p>Location: {props.location.name}</p>
-            <p>Gender: {props.gender}</p>
-            <p>Species: {props.species}</p>
-            <p>Status: {props.status}</p>
-        </div>
+        <CharacterContainer>
+            <CharacterCard>
+            <Name>Name: {props.name}</Name>
+            <Images src={props.pic} alt={props.name}/>
+            <Text>Origin: {props.origin.name}</Text>
+            <Text>Location: {props.location.name}</Text>
+            <Text>Gender: {props.gender}</Text>
+            <Text>Species: {props.species}</Text>
+            <Text>Status: {props.status}</Text>
+            </CharacterCard>
+        </CharacterContainer>
     )
 }
 

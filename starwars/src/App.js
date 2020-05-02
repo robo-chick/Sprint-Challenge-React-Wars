@@ -1,5 +1,5 @@
 import React from 'react';
-import Character from './components/Character';
+import CharacterList from './components/CharacterList';
 import './App.css';
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
       <div className='header-container'>
       <h1 className="Header">Characters</h1>
       </div>
-      <Character />
+      <CharacterList />
     </div>
   );
 }
